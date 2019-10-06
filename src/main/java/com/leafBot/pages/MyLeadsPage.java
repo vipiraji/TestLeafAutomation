@@ -8,7 +8,8 @@ public class MyLeadsPage extends SeleniumBase{
 
 	public CreateLeadPage clickCreateLeads()
 	  {
-		  driver.findElementByLinkText("Create Lead").click();
+		  //driver.findElementByLinkText("Create Lead").click();
+		click(locateElement("link","Create Lead"));
 		  return new CreateLeadPage();
 	  }
 //	  public FindLeadsPage clickFindLeads()
